@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  width: 100%;
+  background: #cecece;
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+  font-size: 0.875rem;
+}
+a {
+  color: #666;
+  outline: none;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+  border: none;
+}
+h1 {
+  color: #545454;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+p {
+  margin-bottom: 1rem;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.flex-container .content {
+  position: relative;
+  background: #fff;
+  padding: 2rem 2.5rem;
+  width: 640px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.flex-container .content:hover {
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
+.flex-container .content .form-login {
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: -0.625rem;
+  margin-left: -0.625rem;
+}
+.flex-container .content .form-login input[type='text'],
+.flex-container .content .form-login input[type='email'],
+.flex-container .content .form-login input[type='password'] {
+  width: 100%;
+  border: 1px solid #d6d6d6;
+  padding: 0.625rem;
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+  font-size: 0.875rem;
+}
+.flex-container .content .form-login input[type='text']:focus,
+.flex-container .content .form-login input[type='email']:focus,
+.flex-container .content .form-login input[type='password']:focus {
+  outline: none;
+}
+.flex-container .content .form-login input[type='text']:focus::-webkit-input-placeholder,
+.flex-container .content .form-login input[type='email']:focus::-webkit-input-placeholder,
+.flex-container .content .form-login input[type='password']:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.flex-container .content .form-login input[type='text']:focus::-moz-placeholder,
+.flex-container .content .form-login input[type='email']:focus::-moz-placeholder,
+.flex-container .content .form-login input[type='password']:focus::-moz-placeholder {
+  color: transparent;
+}
+.flex-container .content .form-login input[type='text']:focus:-moz-placeholder,
+.flex-container .content .form-login input[type='email']:focus:-moz-placeholder,
+.flex-container .content .form-login input[type='password']:focus:-moz-placeholder {
+  color: transparent;
+}
+.flex-container .content .form-login input[type='text']:focus:-ms-input-placeholder,
+.flex-container .content .form-login input[type='email']:focus:-ms-input-placeholder,
+.flex-container .content .form-login input[type='password']:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.flex-container .content .form-item {
+  flex-basis: 50%;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+}
+@media (max-width: 575.98px) {
+  .flex-container .content .form-item {
+    flex-basis: 100%;
+  }
+}
+.flex-container .content .form_fb {
+  align-items: stretch;
+}
+.flex-container .content .form_fb .btn {
+  background-color: #4f619a;
+  border-color: #4f619a;
+}
+.flex-container .content .form_fb .btn:hover {
+  background-color: #3c4b7a;
+  border-color: #3c4b7a;
+}
+.flex-container .content .form_fb .btn:focus {
+  background-color: #2e3a5f;
+  border-color: #2e3a5f;
+}
+.flex-container .content .form_fb p {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+.flex-container .content .form_input {
+  align-items: stretch;
+}
+.flex-container .content .form_input p {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.flex-container .content .form_input p label {
+  float: right;
+  color: #000;
+}
+.flex-container .content .form_input p label input {
+  vertical-align: top;
+}
+.flex-container .content .close {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  background: url(../img/close.svg) center center no-repeat #c0c0c0;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.flex-container .content .close:hover {
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+}
+.flex-container .content .close:focus {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.flex-container .content .form-item_title {
+  color: #000;
+  font-size: 1.25rem;
+  padding-bottom: 0.125rem;
+}
+@media (max-width: 575.98px) {
+  .flex-container .content {
+    width: 96%;
+    min-width: 290px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .flex-container .content {
+    width: 480px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .form-submit {
+    order: 1;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .form-submit {
+    order: 1;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .form-submit {
+    order: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .form-submit {
+    order: 1;
+  }
+}
+.btn {
+  width: 100%;
+  background: #6d6d6d;
+  color: #fff;
+  border: 1px solid #6d6d6d;
+  padding: 0.625rem;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.btn:hover {
+  text-decoration: none;
+  background: #545454;
+}
+.btn:focus {
+  text-decoration: none;
+  background: #404040;
+  outline: none;
+}
