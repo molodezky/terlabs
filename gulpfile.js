@@ -20,6 +20,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('watch', ['browser-sync', 'less'], function() {
     gulp.watch('app/less/style.less', ['less']);
+    gulp.watch('app/fonts/*', browserSync.reload);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/*.js', browserSync.reload);
 });
